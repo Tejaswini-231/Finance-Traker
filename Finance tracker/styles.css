@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7facf; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 10px 14px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+h1{
+    color: #7162f8;
+    text-align: center;
+}
+h2 {
+    color: #cb0bf6;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-section, .chart-section {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 12px 18px rgba(10, 10, 10, 0.1);
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px 0; 
+    border-radius: 5px; 
+    border: 1px solid #ffffff; 
+    width: 90%;
+}
+
+button {
+    padding: 10px; 
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f930bd; 
+    color: white;
+    width: calc(50% - 5px); 
+}
+
+button:hover {
+    background-color: #e40eae;
+}
+
+button + button {
+    margin-left: 10px; 
+}
+
+canvas {
+    max-width: 100%; 
+    max-height: 300px; 
+    margin-top: 10px;
+}
+
+.summary-section {
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary-value {
+    font-size: 20px;
+    color: #28a745; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.chart-container {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.chart-container {
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    height: 100px; 
+    overflow: hidden; 
+}
+
+.chart-container canvas {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+}
+
+.summary-value {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #ffffff;
+}

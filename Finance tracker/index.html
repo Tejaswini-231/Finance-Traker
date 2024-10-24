@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Manager</h1>
+        <div class="content">
+            <div class="form-section">
+                <h2>Log Expenses</h2>
+                <form id="transaction-form">
+                    <input type="number" id="amount" placeholder="Amount" required>
+                    <input type="date" id="date" required>
+                    <select id="category">
+                        <option value="income">Income</option>
+                        <option value="food">Food</option>
+                        <option value="rent">Rent</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <div style="display: flex; justify-content: space-between;">
+                        <button type="submit">Add Transaction</button>
+                        <button type="button" id="show-chart-btn">Show Chart</button>
+                    </div>
+                </form>
+                <div id="summary">
+                    <h2>Summary</h2>
+                    <p>Total Income: <span id="total-income">0</span></p>
+                    <p>Total Expenses: <span id="total-expenses">0</span></p>
+                    <p>Monthly Savings: <span id="monthly-savings">0</span></p>
+                    <p id="savings-message"></p>
+                </div>
+            </div>
+            <div class="chart-section">
+                <h2>Expense Distribution</h2>
+                <canvas id="expense-chart"></canvas>
+                <div class="chart-container">
+                    <canvas id="myPieChart"></canvas>
+                    <div id="savingsMessage" class="summary-value"></div> 
+                </div>  
+            </div>
+        </div>      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
